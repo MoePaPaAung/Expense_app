@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-// TODO: သင့်ရဲ့ ဖိုင်လမ်းကြောင်းအတိုင်း ဒီနေရာမှာ Import လုပ်ပေးရပါမယ်
-// ဥပမာ - import 'screens/category_screen.dart';
-import 'category_screen.dart'; 
+import 'splash_screen.dart'; // import လမ်းကြောင်းထည့်ပါ
 
 void main() {
   runApp(const MyApp());
@@ -13,14 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Expense App',
-      debugShowCheckedModeBanner: false, // ညာဘက်အပေါ်က Debug စာတန်းဖျောက်ရန်
+      title: 'Expense Tracker',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
-        useMaterial3: true, // ခေတ်မီတဲ့ UI ပုံစံမျိုး ရရှိစေရန်
+        primarySwatch: Colors.blue,
       ),
-      // ခေါ်ယူပြသမည့် စာမျက်နှာနေရာတွင် ကျွန်မတို့ရေးထားသော Screen ကို ထည့်ပေးရပါမည်
-      home: const CategoryScreen(), 
+      home: const SplashScreen(), // ဒီနေရာမှာ SplashScreen ကို ပထမဆုံး ပွင့်မည့် Screen အဖြစ် သတ်မှတ်ပါ
     );
   }
 }
