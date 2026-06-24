@@ -1,5 +1,31 @@
+// // lib/main.dart
+// import 'package:flutter/material.dart';
+// import 'splash_screen.dart';
+
+// void main() {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({Key? key}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Expense Tracker',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//         scaffoldBackgroundColor: Colors.white,
+//       ),
+//       // App စတင်လျှင် Splash Screen ကို အရင်ပြသပါမည်
+//       home: const SplashScreen(), 
+//     );
+//   }
+// }
+
 import 'package:flutter/material.dart';
-import 'splash_screen.dart'; // import လမ်းကြောင်းထည့်ပါ
+import 'splash_screen.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +42,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(), // ဒီနေရာမှာ SplashScreen ကို ပထမဆုံး ပွင့်မည့် Screen အဖြစ် သတ်မှတ်ပါ
+      home: const SplashScreen(), 
     );
   }
 }
